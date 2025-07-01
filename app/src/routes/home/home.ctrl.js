@@ -20,10 +20,10 @@ const process = {
     const id = req.body.id,
       psword = req.body.psword;
 
-    console.log(id, psword);
-
+    // users 객체에서 일치 여부 확인
     if (users.id.includes(id)) {
       const idx = users.id.indexOf(id);
+      
       if (users.psword[idx] === psword) {
         return res.json({
           success: true,
