@@ -7,18 +7,20 @@ const id = document.querySelector("#id"),
 loginBtn.addEventListener("click", login);
 
 function login() {
+  // req 객체에 id, pwword 값 담기
   const req = {
     id: id.value,
     psword: psword.value
   };
 
-  console.log(req);
+  // req 데이터 전달, 프론트에서 서버로 요청
+  fetch("/login", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(req),
+  })
+    .then((res) => res.json())
+    .then((res) => console.log(res));
 }
-
-fetch("/login", {
-  method: "POST",
-  header: {
-    "Content-Type": "application/json"
-  },
-  body: JSON.stringify(req),
-});
