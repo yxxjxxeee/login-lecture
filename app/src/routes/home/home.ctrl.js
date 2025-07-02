@@ -1,6 +1,8 @@
 // 컨트롤러
 "use strict";
 
+const UserStorage = require("../../models/UserStorage");
+
 const output = {
   home: (req, res) => {
     res.render("home/index");
@@ -10,32 +12,27 @@ const output = {
   }
 };
 
-const users = {
-  id: ['a', 'b', 'c', 'd'],
-  psword: ['1234', '5678', '4321', '8765']
-};
-
 const process = {
   login: (req, res) => {
     const id = req.body.id,
       psword = req.body.psword;
 
-    // users 객체에서 일치 여부 확인
+    const users = UserStorage.getUsers("id", "psword");
+    
+    const response = {};
+
     if (users.id.includes(id)) {
       const idx = users.id.indexOf(id);
-      
+
       if (users.psword[idx] === psword) {
-        return res.json({
-          success: true,
-        });
+        response.success = true;
+        return res.json(response);
       }
     }
 
-    return res.json({
-      success: false,
-      msg: "로그인에 실패하셨습니다."
-    })
-
+    response.success = false;
+    response.msg = "로그인에 실패하셨습니다.";
+    return res.json(response);
   }
 }
 
