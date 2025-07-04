@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    font-family: 'GmarketSansMedium';
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0; 
+    height: 100vh; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #ece9e6, #ffffff); 
+}
+
+/*로그인 박스 스타일*/
+.login-container {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+}
+
+
+.login-container input {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 14px;
+    background-color: #4a90e2;
+    border: none;
+    border-radius: 12px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.login-container button:hover {
+    /* hover 시 단색 */
+    background-color: #3a7bd5;
+    /* 살짝 올라가는 효과 */
+    transform: translateY(-1px);
+}
