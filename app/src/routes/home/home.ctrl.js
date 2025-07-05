@@ -20,6 +20,11 @@ const process = {
     const user = new User(req.body);
     const responce = user.login();
     return res.json(responce);
+  },
+  register: (req, res) => {
+    const user = new User(req.body);
+    const responce = user.register();
+    return res.json(responce);
   }
 };
 

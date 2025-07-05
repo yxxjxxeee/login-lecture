@@ -6,7 +6,8 @@ class UserStorage {
   // #은 변수를 은닉화
   static #users = {
     id: ['a', 'b', 'c', 'd'],
-    psword: ['1234', '5678', '4321', '8765']
+    psword: ['1234', '5678', '4321', '8765'],
+    name: ['abc', 'def', 'gef']
   };
 
   static getUsers(...fields) {
@@ -32,6 +33,14 @@ class UserStorage {
     }, {});
 
     return userInfo;
+  }
+
+  static save(userInfo) {
+    const users = this.#users;
+    users.id.push(userInfo.id);
+    users.name.push(userInfo.name);
+    users.psword.push(userInfo.psword);
+    return {success: true};
   }
 }
 
