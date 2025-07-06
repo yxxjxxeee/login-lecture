@@ -11,12 +11,12 @@
 }
 
 body {
-    margin: 0; 
-    height: 100vh; 
-    display: flex; 
+    margin: 0;
+    height: 100vh;
+    display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to right, #ece9e6, #ffffff); 
+    background: linear-gradient(to right, #ece9e6, #ffffff);
 }
 
 /*로그인 박스 스타일*/
@@ -37,7 +37,7 @@ body {
     border: 1px solid #ddd;
     border-radius: 15px;
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
-    font-size: 22px;
+    font-size: 23px;
 }
 
 .login-container button {
@@ -48,7 +48,7 @@ body {
     border-radius: 12px;
     color: #fff;
     font-weight: 600;
-    font-size: 22px;
+    font-size: 23px;
     cursor: pointer;
     transition: background-color 0.2s ease, transform 0.1s ease;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
@@ -71,7 +71,6 @@ body {
 /* 링크 강조 및 마우스 hover 효과 */
 .login-container .message a {
     color: #4a90e2;
-    font-weight: 600;
     text-decoration: none;
     margin-left: 6px;
     transition: color 0.2s ease;
