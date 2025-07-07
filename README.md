@@ -1,6 +1,6 @@
 # Node.js 로그인 & 회원가입 기능 구현
-유튜브 강의를 따라 하며 Node.js + Express로 로그인 및 회원가입 기능을 직접 구현했습니다.  
-프론트엔드와 백엔드가 연결되는 흐름을 실습했습니다.
+유튜브 강의를 따라 하며 Node.js로 로그인 및 회원가입 기능을 직접 구현했습니다.  
+강의를 통해 프론트엔드와 백엔드가 연결되는 흐름을 실습했습니다.
 
 ## 시청한 유튜브 강의
 [[Node.js] 백엔드 맛보기](https://www.youtube.com/playlist?list=PLSK4WsJ8JS4cQ-niGNum4bkK_THHOizTs)  
