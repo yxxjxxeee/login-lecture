@@ -87,6 +87,7 @@
     "type-is": "^2.0.1",
     "unpipe": "^1.0.0",
     "vary": "^1.1.2",
+    "winston": "^3.17.0",
     "wrappy": "^1.0.2"
   },
   "scripts": {

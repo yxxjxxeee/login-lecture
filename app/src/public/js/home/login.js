@@ -7,6 +7,9 @@ const id = document.querySelector("#id"),
 loginBtn.addEventListener("click", login);
 
 function login() {
+  if (!id.value) return alert("아이디를 입력해주십시오.");
+  if (!psword.value) return alert("비밀번호를 입력해주십시오.");
+
   // req 객체에 id, pwword 값 담기
   const req = {
     id: id.value,
@@ -28,6 +31,7 @@ function login() {
         location.href = "/";
       }
       else {
+        if (res.err) return alert(res.err);
         alert(res.msg);
       }
     })
