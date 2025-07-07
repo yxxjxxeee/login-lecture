@@ -1,5 +1,4 @@
 const { createLogger, transports, format } = require("winston");
-const winston = require("winston/lib/winston/config");
 const { combine, timestamp, json, label, simple, colorize, printf } = format;
 
 const printFormat = printf(({ timestamp, label, level, message }) => {
