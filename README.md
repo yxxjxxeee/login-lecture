@@ -44,10 +44,10 @@
 
 ## 화면 미리보기
 ### 로그인 페이지
-<img src="./img/login.png" alt="login-page" width="600" />
+<img src="./img/login.png" alt="login-page" width="1000" />
 
 ### 회원가입 페이지
-<img src="./img/register.png" alt="signup-page" width="600" />
+<img src="./img/register.png" alt="signup-page" width="1000" />
 
 ### 로그인 성공 페이지
-<img src="./img/login-success.png" alt="login-success" width="600" />
+<img src="./img/login-success.png" alt="login-success" width="1000" />
