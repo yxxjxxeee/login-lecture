@@ -1,4 +1,4 @@
-## login-lecture
+# login-lecture
 Node.js와 Express로 로그인 및 회원가입 기능을 구현한 학습용 프로젝트입니다.  
 [백엔드 맛보기](https://www.youtube.com/playlist?list=PLSK4WsJ8JS4cQ-niGNum4bkK_THHOizTs) 강의를 학습했습니다.
 
